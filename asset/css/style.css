@@ -1,6 +1,6 @@
-body {
+/* body {
   margin: 0;
-  /* width: 80%; */
+  width: 80%;
 }
 
 h1 a {
@@ -44,7 +44,7 @@ header h1 {
 
 header nav li a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* font-size: 18px; */
+  font-size: 18px;
   color: white;
   padding: 12px 14px;
 }
@@ -73,8 +73,8 @@ header nav {
   overflow: hidden;
   width: 100%;
   transition: 0.5s;
-  /* margin-top: 2em; */
-  /* transition: width 1s, height 2s; */
+  margin-top: 2em;
+  transition: width 1s, height 2s;
 }
 
 header nav ul li:hover {
@@ -102,16 +102,16 @@ h3 a {
 
 .container {
   margin: auto 80px;
-  /* border: 2px solid black; */
-  /* border-radius: 5em; */
-  /* margin-top: 100px; */
+  border: 2px solid black;
+  border-radius: 5em;
+  margin-top: 100px;
 }
 
 .isi {
   margin: auto 65px;
 }
 
-/* .singlef {
+.singlef {
     border-top: 3px solid black;
     background-color: black;
     color: white;
@@ -121,15 +121,15 @@ h3 a {
     position: relative;
     height: 78px;
     margin-top: 273px;
-  } */
+  }
 
 footer nav ul li:hover {
   font-size: 25px;
-  /* margin-right: 60px; */
+  margin-right: 60px;
   transition: 0.8s;
 }
 
 .info-meta .author {
   color: blue;
   margin-right: 10px;
-}
+} */
