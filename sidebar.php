@@ -1,3 +1,4 @@
+<!-- sidebar php berguna untuk bagian sidebar didalam website -->
 <aside id="sidebar">
     <?php if (is_active_sidebar('primary-widget-area')): ?>
         <div class="widget-area">

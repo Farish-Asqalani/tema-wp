@@ -1,3 +1,4 @@
+<!-- merupakan halaman utama atau halaman home pada website nantinya -->
 
 <!--get_header() berfungsi untuk mengambil elemen didalam header-->
 <?php get_header(); ?>
@@ -7,12 +8,14 @@
     <div class="isi">
 
 <?php 
+// looping untuk memunculkan postingan
 if (have_posts()):
     //have_post()
         while (have_posts()): the_post();
         get_template_part("content");
 endwhile;
     else:
+        // jika tidak ada postingan maka tampilkan tulisan dibawah 
         echo "Tidak ada post";
         endif;
 ?>

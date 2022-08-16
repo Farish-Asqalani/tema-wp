@@ -1,3 +1,5 @@
+<!-- function - function untuk menjalankan beberapa fungsi untuk development, -->
+<!-- seperti halnya mengconneksikan css dan javascript -->
 <?php
 
 // load script
@@ -30,7 +32,7 @@ add_action('wp_enqueue_scripts', 'EnqueueMyStyles');
 //     register_nav_menu('main_menu', 'Menu Utama');
 // }
 
-
+// menambahkan menu ke navbar dan footer
 register_nav_menus( array(
     'main-menu' => 'Menu Utama',
     'footer-menu' => 'Menu Footer'

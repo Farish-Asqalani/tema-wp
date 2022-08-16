@@ -1,3 +1,4 @@
+<!-- content merupakan isi dari content ketika postingan atau page diklik maka user akan terdirect ke halaman ini -->
 
 <!--get_header() berfungsi untuk mengambil elemen didalam header-->
 <?php get_header(); ?>

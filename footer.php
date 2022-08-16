@@ -1,3 +1,5 @@
+<!-- bagian footer dari website -->
+
 <div class="ftb"></div>
 <footer>
     <nav>
