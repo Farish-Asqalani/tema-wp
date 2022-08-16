@@ -2,7 +2,7 @@
 <!-- single.php akan dipanggil jika kita disalah satu kontent -->
 <?php get_header(); ?>
 
-
+<div class="container-isi">
 <main class="isi">
 <?php 
 if (have_posts()):
@@ -22,6 +22,7 @@ if (have_posts()):
         endif;
 ?>
 </main>
+</div>
 
 <div class="singlef">
     <?php get_footer(); ?>

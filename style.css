@@ -159,3 +159,7 @@ footer nav ul li:hover {
   justify-content: center;
   align-items: center;
 }
+
+.container-isi {
+  color: white;
+}
