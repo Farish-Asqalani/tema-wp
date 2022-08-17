@@ -1,6 +1,6 @@
-<!-- function - function untuk menjalankan beberapa fungsi untuk development, -->
-<!-- seperti halnya mengconneksikan css dan javascript -->
 <?php
+// function - function untuk menjalankan beberapa fungsi untuk development,
+// seperti halnya mengconneksikan css dan javascript
 
 // load script
 // yang berguna untuk mengkoneksikan file .css atau .js
@@ -9,15 +9,15 @@
 // }
 
 // add_action('wp_enqueue_scripts','loadFile' );
-function EnqueueMyStyles() {
-    wp_enqueue_style('my-custom-style', get_template_directory_uri() . '/css/my-custom-style.css', false, '20150320');
+// function EnqueueMyStyles() {
+//     wp_enqueue_style('my-custom-style', get_template_directory_uri() . '/css/my-custom-style.css', false, '20150320');
 
-    wp_enqueue_style('my-google-fonts', '//fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic', false, '20150320');
+//     wp_enqueue_style('my-google-fonts', '//fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic', false, '20150320');
 
-    wp_enqueue_style('my-main-style', get_stylesheet_uri(), false, '20150320');
-    }
+//     wp_enqueue_style('my-main-style', get_stylesheet_uri(), false, '20150320');
+//     }
 
-add_action('wp_enqueue_scripts', 'EnqueueMyStyles');
+// add_action('wp_enqueue_scripts', 'EnqueueMyStyles');
 
 // register_nav_menu( array(
 //     'main_menu' => 'Menu Utama'

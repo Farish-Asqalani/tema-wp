@@ -27,3 +27,5 @@ if (have_posts()):
 <div class="singlef">
     <?php get_footer(); ?>
 </div>
+
+

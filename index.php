@@ -16,7 +16,7 @@ if (have_posts()):
 endwhile;
     else:
         // jika tidak ada postingan maka tampilkan tulisan dibawah 
-        echo "Tidak ada post";
+        echo "Tidak ada post"; 
         endif;
 ?>
 </div>
@@ -25,3 +25,5 @@ endwhile;
 
 <!--get_footer() berfungsi untuk mengambil elemen didalam footer-->
 <?php get_footer(); ?>
+
+

@@ -18,7 +18,7 @@
     <!--//the_content berfungsi untuk isi dari kontent page-->
     <p><?php //the_content();?></p>
     <p>
-        <?= get_the_excerpt(); ?><a href="<?php the_permalink() ?>">Baca</a>        
+        <?= get_the_excerpt(); ?><a href="<?php the_permalink() ?>" class="baca"> Baca</a>        
     </p>
     <p class="info-meta">
         <span class="author"><a href="<?= get_author_posts_url(get_the_author_meta("ID")) ?>"><?php the_author(); ?></a></span>

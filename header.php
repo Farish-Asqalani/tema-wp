@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?>></title>
     <!-- Untuk mengkoneksikan styke.css dari folder asset -->
+    <link rel="stylesheet" href="<?= get_bloginfo('stylesheet_directory') ?> /Asset/css/style.css">
     <!--  wp_head() bergunsi untuk memberitahu kalau ini adalah header nya  -->
     <!--  Dan berguna untuk menload script css atau js  -->
     <?php wp_head(); ?>
