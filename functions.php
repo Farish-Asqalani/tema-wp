@@ -52,4 +52,13 @@ function return_text(){
 add_filter('excerpt_more', 'return_text');
 add_filter('excerpt_length', 'get_length');
 
+function widget_setup(){
+    register_sidebar(array(
+        'name' => 'sidebar1',
+    ));
+}
+
+add_action('widgets_init', 'widget_setup');
+
+
 ?>

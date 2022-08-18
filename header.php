@@ -19,7 +19,7 @@
     <header>
         <nav>
             <ul class="logo1">
-                <li class="logo"><a href="<?= home_url(); ?>">logo</a></li>
+                <li class="logo"><a href="<?= home_url(); ?>">Tulisan</a></li>
             </ul>
             <?php
             // berfungsi untuk mengambil menu dari main

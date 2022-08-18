@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #101314;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 a {
@@ -114,7 +115,7 @@ h3 a {
 }
 
 .isi {
-  margin: auto 37px;
+  margin: auto 57px;
 }
 
 .singlef {
@@ -150,7 +151,7 @@ h3 a {
 }
 
 .container-isi {
-  color: white;
+  color: #f7f7f7;
 }
 
 .baca {
@@ -160,4 +161,15 @@ h3 a {
 
 .baca:hover {
   color: rgba(0, 0, 255, 0.897);
+}
+
+main aside {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+aside a {
+  text-decoration: none;
+  color: #f7f7f7;
 }
