@@ -29,20 +29,79 @@
         height: 50px;
         }
 
+        .container {
+            display: grid;
+            grid-template-areas: "about about about sb sb sb";
+        }
+
         #front-page {
             margin: auto 74px;
+            grid-area: about;
             inline-size: 700px;
             /* inline-size: min-content; */
+        }
+
+        ul li {
+            text-decoration: none;
+        }
+        
+
+        .sb {
+            grid-area: sb;
+            font-size: 20px;
+            margin-top: 3rem;
         }
 
         a {
             text-decoration: none;
             color: #f7f7f7;
         }
+
+        @media screen and (max-width: 720px) {
+
+            body {
+                margin: 0;
+            }
+
+            #front-page {
+            margin: auto 74px;
+            grid-area: about;
+            inline-size: 230px;
+        }
+        .sb {
+            grid-area: sb;
+            font-size: 20px;
+            margin-top: 3rem;
+        }
+
+        aside {
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: 
+            "about about about"
+            "sb sb sb"
+            "ft ft ft";
+            /* display: flex;
+            flex-direction: column; */
+        }
+
+        .singlef {
+            position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        }
+
+        }
+
     </style>
 </head>
 <body>
-
+<div class="container">
 <div id="front-page">
 <h1>Selamat Datang!</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illo. At, illo?</p>
@@ -52,11 +111,17 @@
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ipsam exercitationem dolorum ex beatae. Veritatis officiis est qui ducimus perspiciatis, fugiat quis asperiores amet incidunt fuga quod id animi optio.</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est hic architecto dolores. Inventore nemo explicabo facilis doloribus. Amet laborum veritatis cupiditate ex beatae maiores modi tempora pariatur molestiae iusto.</p>
 </div>
+<aside class="sb">
+    <h3>Latest Post</h3>
+    <ul>
+        <?php dynamic_sidebar('sidebar1'); ?>
+    </ul>
+</aside>
+</div>
 
-
+<div class="singlef">
+    <?php get_footer(); ?>
+</div>
 </body>
 </html>
 
-<div class="singlef">
-<?php get_footer(); ?>
-</div>
