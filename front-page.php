@@ -46,8 +46,8 @@
 
         .sb1 {
             grid-area: sb;
-            /* font-size: 20px;
-            margin-top: 3rem; */
+            font-size: 20px;
+            /* margin-top: 3rem; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -86,8 +86,8 @@
         }
         .sb1 {
             grid-area: sb;
-            /* font-size: 20px;
-            margin-top: 3rem; */
+            font-size: 20px;
+            /* margin-top: 3rem; */
             display: flex;
             flex-direction: column;
             justify-content: center;
