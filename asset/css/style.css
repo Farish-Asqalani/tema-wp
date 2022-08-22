@@ -141,7 +141,7 @@ h3 a {
 }
 
 .isi h3 a {
-  color: red;
+  color: #f7f7f7;
 }
 
 aside li {
@@ -204,7 +204,7 @@ aside li:hover {
 
 .info-meta .author a {
   text-decoration: none;
-  color: blue;
+  color: #0275d8;
   margin-right: 10px;
   font-weight: bold;
 }
