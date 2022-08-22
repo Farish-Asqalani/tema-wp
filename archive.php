@@ -3,6 +3,7 @@
 <!--get_header() berfungsi untuk mengambil elemen didalam header-->
 <?php get_header(); ?>
 
+<div class="arc">
 <div class="container">
 <main>
     <div class="isi">
@@ -14,7 +15,7 @@ if (have_posts()): ?>
         <?php 
         // is_category() berfungsi untuk memberitahu ini ada dikategori apa
         if(is_category()){
-            echo "Halaman Kategori"; single_cat_title();
+            echo "Halaman Kategori "; single_cat_title();
             // is_author() berguna untuk memberitahu siapa author dari postingan ini
         } else if(is_author()){
             echo get_the_author() . " " . "Page";
@@ -24,6 +25,7 @@ if (have_posts()): ?>
         
         ?>
     </p>
+    <button class="back"><a href="https://localhost/wordpress/services/">Back</a></button>
 
     <?php 
     // ngeloop postingan
@@ -34,8 +36,13 @@ if (have_posts()): ?>
         endif;
 ?>
 </div>
+</div>
 </main>
 </div>
 
 <!--get_footer() berfungsi untuk mengambil elemen didalam footer-->
+<div class="kategori">
+
 <?php get_footer(); ?>
+
+</div>

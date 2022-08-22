@@ -26,5 +26,6 @@
 </main>
 </div>
 
+
 <!--get_footer() berfungsi untuk mengambil elemen didalam footer-->
 <?php //get_footer(); ?>

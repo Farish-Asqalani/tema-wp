@@ -21,11 +21,22 @@ endwhile;
 ?>
 </div>
 </main>
+<aside class="sb">
+    <h3>Category</h3>
+    <ul>
+        <div class="isisb">
+        <?php dynamic_sidebar('sidebar2'); ?>
+        </div>
+    </ul>
+</aside>
 </div>
 
 
 
+
 <!--get_footer() berfungsi untuk mengambil elemen didalam footer-->
+<div class="footer">
 <?php get_footer(); ?>
+</div>
 
 

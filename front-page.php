@@ -23,6 +23,7 @@
         }
 
         .singlef {
+        grid-area: ft;
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -31,7 +32,9 @@
 
         .container {
             display: grid;
-            grid-template-areas: "about about about sb sb sb";
+            grid-template-areas: 
+            "about about about sb sb sb"
+            "ft ft ft ft ft ft";
         }
 
         #front-page {
@@ -46,7 +49,7 @@
         }
         
 
-        .sb {
+        .sb1 {
             grid-area: sb;
             font-size: 20px;
             margin-top: 3rem;
@@ -55,6 +58,10 @@
         a {
             text-decoration: none;
             color: #f7f7f7;
+        }
+
+        h3 {
+            margin-left: 1em;
         }
 
         @media screen and (max-width: 720px) {
@@ -68,7 +75,7 @@
             grid-area: about;
             inline-size: 230px;
         }
-        .sb {
+        .sb1 {
             grid-area: sb;
             font-size: 20px;
             margin-top: 3rem;
@@ -78,19 +85,30 @@
             text-align: center;
         }
 
+        footer {
+            grid-area: ft;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1em 0px;
+            font-size: 18px;
+            margin-top: 1em;        
+        }
+
         .container {
             display: grid;
             grid-template-rows: auto 1fr auto;
             grid-template-areas: 
-            "about about about"
-            "sb sb sb"
-            "ft ft ft";
-            /* display: flex;
+            "about about about about"
+            "sb sb sb sb"
+            "ft ft ft ft";
+            /* display: flex; 
             flex-direction: column; */
         }
 
         .singlef {
-            position: absolute;
+        grid-area: ft;
+        position: absolute;
         bottom: 0;
         width: 100%;
         height: 50px;
@@ -111,7 +129,7 @@
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ipsam exercitationem dolorum ex beatae. Veritatis officiis est qui ducimus perspiciatis, fugiat quis asperiores amet incidunt fuga quod id animi optio.</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est hic architecto dolores. Inventore nemo explicabo facilis doloribus. Amet laborum veritatis cupiditate ex beatae maiores modi tempora pariatur molestiae iusto.</p>
 </div>
-<aside class="sb">
+<aside class="sb1">
     <h3>Latest Post</h3>
     <ul>
         <?php dynamic_sidebar('sidebar1'); ?>
@@ -119,9 +137,10 @@
 </aside>
 </div>
 
+
+
+
 <div class="singlef">
-    <?php get_footer(); ?>
-</div>
-</body>
-</html>
+    <?php get_footer(); ?> 
+    </div>
 

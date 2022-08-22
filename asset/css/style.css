@@ -106,16 +106,51 @@ h3 a {
   color: white;
 }
 
-.container {
-  /* margin: auto 80px; */
-  /* border: 2px solid black; */
-  /* border-radius: 5em; */
-  /* margin-top: 100px; */
-  color: white;
+.sb {
+  grid-area: sb;
+  font-size: 20px;
+  margin-top: 3rem;
+  margin-right: 4em;
+}
+
+.sb h3 {
+  margin-left: 3em;
 }
 
 .isi {
   margin: auto 57px;
+  grid-area: isi;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.container {
+  /* margin: auto 80px; */
+  margin: auto 10px;
+  /* border: 2px solid black; */
+  /* border-radius: 5em; */
+  /* margin-top: 100px; */
+  color: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "isi isi isi sb sb"
+    "ft ft ft ft ft";
+}
+
+.isi h3 a {
+  color: red;
+}
+
+aside li {
+  transition: 0.8s;
+}
+
+aside li:hover {
+  font-size: 20px;
+  transition: 0.8s;
 }
 
 .singlef {
@@ -125,9 +160,51 @@ h3 a {
   height: 50px;
 }
 
-.info-meta .author a {
+.next a {
   text-decoration: none;
   color: white;
+  margin: 0px 2em;
+}
+
+.nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+  display: flex;
+  margin-top: 3em;
+  justify-content: space-between;
+}
+
+.nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  background-color: black;
+  padding: 0.5em 1em;
+  border-radius: 10em;
+  border: 3px solid white;
+  margin-left: 3em;
+}
+
+.nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  text-align: end;
+  /* flex: 1 0 50%; */
+  background-color: black;
+  padding: 0.5em 1em;
+  border-radius: 10em;
+  border: 3px solid white;
+  margin-right: 3em;
+}
+
+/* .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.info-meta .author a {
+  text-decoration: none;
+  color: blue;
   margin-right: 10px;
   font-weight: bold;
 }
@@ -172,4 +249,23 @@ main aside {
 aside a {
   text-decoration: none;
   color: #f7f7f7;
+}
+
+.back a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: #101314;
+  padding: 0.5em 1.9em;
+  border-radius: 10em;
+  border: 3px solid white;
+}
+
+.kategori {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }

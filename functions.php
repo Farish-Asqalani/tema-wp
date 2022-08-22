@@ -56,9 +56,21 @@ function widget_setup(){
     register_sidebar(array(
         'name' => 'sidebar1',
     ));
+    register_sidebar(array(
+        'name' => 'sidebar2',
+    ));
 }
 
 add_action('widgets_init', 'widget_setup');
+
+ the_post_navigation( array(
+    'next'  => __( '%title →' ),
+    'Previous'  => __( '%title →' ),
+ ) );
+//  the_post_navigation( array(
+//  ) );
+
+
 
 
 ?>
