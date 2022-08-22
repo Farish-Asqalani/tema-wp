@@ -95,6 +95,15 @@
             margin-top: 1em;        
         }
 
+        
+        .singlef {
+        grid-area: ft;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        }
+
         .container {
             display: grid;
             grid-template-rows: auto 1fr auto;
@@ -104,14 +113,6 @@
             "ft ft ft ft";
             /* display: flex; 
             flex-direction: column; */
-        }
-
-        .singlef {
-        grid-area: ft;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
         }
 
         }
@@ -140,7 +141,5 @@
 
 
 
-<div class="singlef">
-    <?php get_footer(); ?> 
-    </div>
+<?php get_footer(); ?>
 

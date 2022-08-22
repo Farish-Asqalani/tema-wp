@@ -4,6 +4,7 @@
 
 <div class="container-isi">
 <main class="isi">
+    <div class="isi2">
 <?php 
 if (have_posts()):
 //             have_post()
@@ -23,11 +24,10 @@ if (have_posts()):
 ?>
 </main>
 </div>
+</div>
 
-<div class="singlef">
     <div class="next">
         <?php the_post_navigation("next"); ?>
-</div>
-    <?php get_footer(); ?>
-</div>
+    </div>
+<?php get_footer(); ?>
 
