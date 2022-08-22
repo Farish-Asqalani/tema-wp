@@ -13,22 +13,17 @@
             color: #f7f7f7;
         }
 
-        footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 1em 0px;
-        font-size: 18px;
-        margin-top: 1em;
-        }
 
-        .singlef {
-        grid-area: ft;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
+        footer {
+            grid-area: ft;
         }
+        .test {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+        }
+        
 
         .container {
             display: grid;
@@ -51,8 +46,12 @@
 
         .sb1 {
             grid-area: sb;
-            font-size: 20px;
-            margin-top: 3rem;
+            /* font-size: 20px;
+            margin-top: 3rem; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         a {
@@ -70,15 +69,29 @@
                 margin: 0;
             }
 
+            .test {
+                position: unset;
+            grid-area: ft;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+        }
             #front-page {
             margin: auto 74px;
             grid-area: about;
             inline-size: 230px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .sb1 {
             grid-area: sb;
-            font-size: 20px;
-            margin-top: 3rem;
+            /* font-size: 20px;
+            margin-top: 3rem; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         aside {
@@ -87,21 +100,21 @@
 
         footer {
             grid-area: ft;
-            background-color: black;
+            /* background-color: black;
             color: white;
             text-align: center;
             padding: 1em 0px;
             font-size: 18px;
-            margin-top: 1em;        
+            margin-top: 1em;         */
         }
 
         
         .singlef {
-        grid-area: ft;
-        position: absolute;
+        /* grid-area: ft; */
+        /* position: absolute; */
         bottom: 0;
         width: 100%;
-        height: 50px;
+        /* height: 50px; */
         }
 
         .container {
@@ -137,9 +150,18 @@
     </ul>
 </aside>
 </div>
+</body>
+</html>
 
 
 
-
+<!-- <footer class="singlef"> -->
+<div class="test">
 <?php get_footer(); ?>
+</div>
+<!-- </footer> -->
+
+
+
+
 
