@@ -26,8 +26,11 @@ if (have_posts()):
 </div>
 </div>
 
+<div class="singlef">
     <div class="next">
         <?php the_post_navigation("next"); ?>
     </div>
-<?php get_footer(); ?>
+    
+    <?php get_footer(); ?>
+    </div>
 
